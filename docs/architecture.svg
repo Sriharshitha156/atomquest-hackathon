@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#0a0e1a"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" fill="#e8edf5" font-size="20" font-weight="700">AtomQuest Goal Portal — Architecture</text>
+
+  <!-- USERS layer -->
+  <text x="30" y="90" fill="#6b7fa3" font-size="11" font-weight="600" letter-spacing="1">USERS</text>
+  <!-- Employee -->
+  <rect x="20" y="100" width="120" height="60" rx="10" fill="#111827" stroke="#1e2d45" stroke-width="1.5"/>
+  <text x="80" y="125" text-anchor="middle" fill="#3b82f6" font-size="20">👤</text>
+  <text x="80" y="148" text-anchor="middle" fill="#e8edf5" font-size="12" font-weight="600">Employee</text>
+  <!-- Manager -->
+  <rect x="160" y="100" width="120" height="60" rx="10" fill="#111827" stroke="#1e2d45" stroke-width="1.5"/>
+  <text x="220" y="125" text-anchor="middle" fill="#8b5cf6" font-size="20">👥</text>
+  <text x="220" y="148" text-anchor="middle" fill="#e8edf5" font-size="12" font-weight="600">Manager</text>
+  <!-- Admin -->
+  <rect x="300" y="100" width="120" height="60" rx="10" fill="#111827" stroke="#1e2d45" stroke-width="1.5"/>
+  <text x="360" y="125" text-anchor="middle" fill="#10b981" font-size="20">🛡</text>
+  <text x="360" y="148" text-anchor="middle" fill="#e8edf5" font-size="12" font-weight="600">Admin / HR</text>
+
+  <!-- Arrow down to frontend -->
+  <line x1="220" y1="160" x2="220" y2="205" stroke="#2a3f5f" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- FRONTEND layer -->
+  <text x="30" y="220" fill="#6b7fa3" font-size="11" font-weight="600" letter-spacing="1">FRONTEND · React 18 + Vite (port 5173)</text>
+  <rect x="20" y="230" width="530" height="100" rx="12" fill="#111827" stroke="#2a3f5f" stroke-width="1.5"/>
+
+  <!-- Pages boxes -->
+  <rect x="35" y="245" width="110" height="36" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="90" y="267" text-anchor="middle" fill="#3b82f6" font-size="11">Dashboard</text>
+
+  <rect x="155" y="245" width="110" height="36" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="210" y="267" text-anchor="middle" fill="#3b82f6" font-size="11">Goal Form / Detail</text>
+
+  <rect x="275" y="245" width="110" height="36" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="330" y="267" text-anchor="middle" fill="#8b5cf6" font-size="11">Team Goals</text>
+
+  <rect x="395" y="245" width="80" height="36" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="435" y="267" text-anchor="middle" fill="#8b5cf6" font-size="11">Check-in</text>
+
+  <rect x="35" y="288" width="80" height="32" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="75" y="308" text-anchor="middle" fill="#10b981" font-size="11">Reports</text>
+
+  <rect x="125" y="288" width="90" height="32" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="170" y="308" text-anchor="middle" fill="#10b981" font-size="11">Admin: Users</text>
+
+  <rect x="225" y="288" width="100" height="32" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="275" y="308" text-anchor="middle" fill="#10b981" font-size="11">Admin: Cycles</text>
+
+  <rect x="335" y="288" width="90" height="32" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="380" y="308" text-anchor="middle" fill="#10b981" font-size="11">Audit Log</text>
+
+  <!-- Label: Axios + JWT -->
+  <text x="460" y="320" fill="#6b7fa3" font-size="10">Axios + JWT</text>
+
+  <!-- Arrow to API -->
+  <line x1="285" y1="330" x2="285" y2="375" stroke="#2a3f5f" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- BACKEND layer -->
+  <text x="30" y="392" fill="#6b7fa3" font-size="11" font-weight="600" letter-spacing="1">BACKEND · Node.js + Express (port 5000)</text>
+  <rect x="20" y="402" width="530" height="90" rx="12" fill="#111827" stroke="#2a3f5f" stroke-width="1.5"/>
+
+  <!-- Route boxes -->
+  <rect x="35" y="415" width="75" height="30" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="72" y="434" text-anchor="middle" fill="#e8edf5" font-size="10">/auth</text>
+
+  <rect x="118" y="415" width="75" height="30" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="155" y="434" text-anchor="middle" fill="#e8edf5" font-size="10">/goals</text>
+
+  <rect x="201" y="415" width="75" height="30" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="238" y="434" text-anchor="middle" fill="#e8edf5" font-size="10">/users</text>
+
+  <rect x="284" y="415" width="75" height="30" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="321" y="434" text-anchor="middle" fill="#e8edf5" font-size="10">/cycles</text>
+
+  <rect x="367" y="415" width="75" height="30" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="404" y="434" text-anchor="middle" fill="#e8edf5" font-size="10">/reports</text>
+
+  <rect x="450" y="415" width="75" height="30" rx="6" fill="#1a2235" stroke="#1e2d45"/>
+  <text x="487" y="434" text-anchor="middle" fill="#e8edf5" font-size="10">/audit</text>
+
+  <!-- Middleware label -->
+  <text x="35" y="470" fill="#6b7fa3" font-size="10">Middleware: JWT Auth · Role Guard · Error Handler · Morgan Logger</text>
+
+  <!-- Arrow to DB -->
+  <line x1="285" y1="492" x2="285" y2="535" stroke="#2a3f5f" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- DATABASE layer -->
+  <text x="30" y="552" fill="#6b7fa3" font-size="11" font-weight="600" letter-spacing="1">DATABASE · MongoDB + Mongoose</text>
+  <rect x="20" y="560" width="530" height="30" rx="10" fill="#111827" stroke="#2a3f5f" stroke-width="1.5"/>
+  <text x="285" y="580" text-anchor="middle" fill="#e8edf5" font-size="11">Collections: Users · Goals · Cycles · AuditLogs</text>
+
+  <!-- RIGHT PANEL: key decisions -->
+  <rect x="580" y="80" width="300" height="500" rx="12" fill="#111827" stroke="#1e2d45" stroke-width="1.5"/>
+  <text x="730" y="108" text-anchor="middle" fill="#e8edf5" font-size="13" font-weight="700">Key Design Decisions</text>
+
+  <!-- Items -->
+  <circle cx="600" cy="135" r="4" fill="#3b82f6"/>
+  <text x="614" y="139" fill="#e8edf5" font-size="11" font-weight="600">Goal Status Machine</text>
+  <text x="614" y="153" fill="#6b7fa3" font-size="10">draft → submitted → returned</text>
+  <text x="614" y="165" fill="#6b7fa3" font-size="10">→ approved/locked</text>
+
+  <circle cx="600" cy="188" r="4" fill="#8b5cf6"/>
+  <text x="614" y="192" fill="#e8edf5" font-size="11" font-weight="600">UoM-aware Score Engine</text>
+  <text x="614" y="206" fill="#6b7fa3" font-size="10">4 formulas: Min/Max/Timeline/Zero</text>
+  <text x="614" y="218" fill="#6b7fa3" font-size="10">Cached per quarter in MongoDB</text>
+
+  <circle cx="600" cy="241" r="4" fill="#10b981"/>
+  <text x="614" y="245" fill="#e8edf5" font-size="11" font-weight="600">Immutable Audit Trail</text>
+  <text x="614" y="259" fill="#6b7fa3" font-size="10">Every post-lock change is logged</text>
+  <text x="614" y="271" fill="#6b7fa3" font-size="10">Who · What · When</text>
+
+  <circle cx="600" cy="294" r="4" fill="#f59e0b"/>
+  <text x="614" y="298" fill="#e8edf5" font-size="11" font-weight="600">Role-based Access Control</text>
+  <text x="614" y="312" fill="#6b7fa3" font-size="10">JWT + middleware role guard</text>
+  <text x="614" y="324" fill="#6b7fa3" font-size="10">Per-route authorization</text>
+
+  <circle cx="600" cy="347" r="4" fill="#ef4444"/>
+  <text x="614" y="351" fill="#e8edf5" font-size="11" font-weight="600">Validation (Frontend + Backend)</text>
+  <text x="614" y="365" fill="#6b7fa3" font-size="10">Total weight = 100%</text>
+  <text x="614" y="377" fill="#6b7fa3" font-size="10">Min 10% · Max 8 goals</text>
+
+  <circle cx="600" cy="400" r="4" fill="#06b6d4"/>
+  <text x="614" y="404" fill="#e8edf5" font-size="11" font-weight="600">Cycle Phase Engine</text>
+  <text x="614" y="418" fill="#6b7fa3" font-size="10">Goal Setting → Q1 → Q2 → Q3 → Q4</text>
+  <text x="614" y="430" fill="#6b7fa3" font-size="10">Date-window based phase detection</text>
+
+  <circle cx="600" cy="453" r="4" fill="#3b82f6"/>
+  <text x="614" y="457" fill="#e8edf5" font-size="11" font-weight="600">CSV Export</text>
+  <text x="614" y="471" fill="#6b7fa3" font-size="10">Flat export of all actuals</text>
+  <text x="614" y="483" fill="#6b7fa3" font-size="10">Planned vs Achievement per quarter</text>
+
+  <circle cx="600" cy="506" r="4" fill="#8b5cf6"/>
+  <text x="614" y="510" fill="#e8edf5" font-size="11" font-weight="600">Shared Goals</text>
+  <text x="614" y="524" fill="#6b7fa3" font-size="10">Manager pushes KPI to N employees</text>
+  <text x="614" y="536" fill="#6b7fa3" font-size="10">Recipients can only change weightage</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#2a3f5f"/>
+    </marker>
+  </defs>
+</svg>
